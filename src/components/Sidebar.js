@@ -4,11 +4,18 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 function Sidebar() {
   return (
-    <div>
-      <h2>I am the Sidebar</h2>
-      <div class="sidebar__top">
+    <div className="sidebar">
+      <div className="sidebar__top">
         <h3>Home</h3>
         <ExpandMoreIcon />
+      </div>
+      <div className="sidebar__channels">
+        <div className="sidebar__channelsHeader">
+          <div className="sidebar__header">
+            <ExpandMoreIcon />
+            <h4>Text Channels</h4>
+          </div>
+        </div>
       </div>
     </div>
   );
